@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/my_layout_id"
+    tools:context=".MainActivity">
+
+<Button
+    android:id="@+id/buttonRed"
+    android:onClick="onButtonRed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/buttonRed"
+    android:textSize="20sp"
+    android:textColor="@color/red"
+    android:layout_above="@+id/buttonYellow"
+    android:layout_centerHorizontal="true"/>
+<Button
+    android:id="@+id/buttonYellow"
+    android:onClick="onButtonYellow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/buttonYellow"
+    android:textSize="20sp"
+    android:textColor="@color/yellow"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"/>
+<Button
+    android:id="@+id/buttonGreen"
+    android:onClick="onButtonGreen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/buttonGreen"
+    android:textSize="20sp"
+    android:textColor="@color/green"
+    android:layout_below="@+id/buttonYellow"
+    android:layout_centerHorizontal="true"/>
+</RelativeLayout>
